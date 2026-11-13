@@ -15,7 +15,7 @@ esp32:
   # memory layout for pre-v3 and for rev3 (CONFIG_ESP32P4_SELECTS_REV_LESS_V3) and the two are NOT binary
   # compatible: a firmware built with this flag does not boot on rev3 silicon, and the other way round.
   # Checked on a real JC8012P4A1 (pull request #14); a panel that reports v3.0 or higher needs this set to false.
-  engineering_sample: true
+  engineering_sample: false
   # The main loop asks the C6 things over esp_hosted's RPC and waits for the answer: the Wi-Fi signal, the access
   # point, the power save mode at standby and at wake, and at boot the whole setup of the Wi-Fi. Each such wait gives
   # up after 5 seconds (DEFAULT_RPC_RSP_TIMEOUT in esp_hosted), and ESPHome's task watchdog gives up on the main loop
