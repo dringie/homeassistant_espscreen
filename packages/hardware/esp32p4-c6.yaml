@@ -40,6 +40,7 @@ esp32_hosted:
   d2_pin: ${HOSTED_D2_PIN}
   d3_pin: ${HOSTED_D3_PIN}
   active_high: true
+  update_coprocessor_firmware: true
   sdio_frequency: ${HOSTED_SDIO_FREQUENCY}
 
 logger:
