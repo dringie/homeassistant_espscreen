@@ -14,10 +14,10 @@ substitutions:
   HOSTED_RESET_PIN: GPIO54
   HOSTED_CMD_PIN: GPIO19
   HOSTED_CLK_PIN: GPIO18
-  HOSTED_D0_PIN: GPIO14
-  HOSTED_D1_PIN: GPIO15
+  HOSTED_D0_PIN: GPIO6
+  HOSTED_D1_PIN: GPIO14
   HOSTED_D2_PIN: GPIO16
-  HOSTED_D3_PIN: GPIO17
+  HOSTED_D3_PIN: GPIO22
   TOUCH_SDA: GPIO7
   TOUCH_SCL: GPIO8
 
@@ -40,7 +40,6 @@ esp32_hosted:
   d2_pin: ${HOSTED_D2_PIN}
   d3_pin: ${HOSTED_D3_PIN}
   active_high: true
-  update_coprocessor_firmware: true
   sdio_frequency: ${HOSTED_SDIO_FREQUENCY}
 
 logger:
